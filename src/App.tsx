@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoApp from '../src/component/TodoApp';
+import Practice from './component/practice/practice';
+import UseState from './component/practice/hooks/UseState';
+import UseReducer from './component/practice/hooks/UseReducer';
+import Content from './component/practice/hooks/context/Content';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div style={{display: "flex", justifyContent: "center"}}>
+    {/* <Practice name='pradip' age={19} isEligible={false} /> */}
+
+    {/* <TodoApp /> */}
+
+    <UseState />
+
+    {/* <UseReducer /> */}
+    {/* <Content /> */}
+
     </div>
+  
+      
+    
+
+    </>
   );
-}
+};
 
 export default App;
