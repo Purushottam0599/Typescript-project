@@ -1,10 +1,10 @@
 export interface Task{
-    id: number,
-    title: string,
+    id: number;
+    title: string;
 }
 
 export interface TaskState{
-    tasks: Task[],
+    tasks: Task[];
 }
 
 export enum TaskActionTypes{

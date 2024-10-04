@@ -7,11 +7,13 @@ import Content from './component/practice/hooks/context/Content';
 import UseRef from './component/practice/hooks/UseRef';
 import UseMemo from './component/practice/hooks/UseMemo';
 import UseCallback from './component/practice/hooks/UseCallback';
+import AddTask from './component/manageTask/AddTask';
+import TaskList from './component/manageTask/TaskList';
 
 const App: React.FC = () => {
   return (
     <>
-    <div style={{display: "flex", justifyContent: "center"}}>
+    {/* <div style={{display: "flex", justifyContent: "center"}}> */}
     {/* <Practice name='pradip' age={19} isEligible={false} /> */}
 
     {/* <TodoApp /> */}
@@ -25,10 +27,14 @@ const App: React.FC = () => {
 
     {/* <UseMemo /> */}
 
-    <UseCallback />
+    {/* <UseCallback /> */}
+    
+    <div>Task Manager</div>
+    <AddTask />
+    <TaskList />
 
 
-    </div>
+    {/* </div> */}
 
     </>
   );
