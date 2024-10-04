@@ -4,6 +4,9 @@ import Practice from './component/practice/practice';
 import UseState from './component/practice/hooks/UseState';
 import UseReducer from './component/practice/hooks/UseReducer';
 import Content from './component/practice/hooks/context/Content';
+import UseRef from './component/practice/hooks/UseRef';
+import UseMemo from './component/practice/hooks/UseMemo';
+import UseCallback from './component/practice/hooks/UseCallback';
 
 const App: React.FC = () => {
   return (
@@ -13,15 +16,19 @@ const App: React.FC = () => {
 
     {/* <TodoApp /> */}
 
-    <UseState />
+    {/* <UseState /> */}
 
     {/* <UseReducer /> */}
     {/* <Content /> */}
 
+    {/* <UseRef /> */}
+
+    {/* <UseMemo /> */}
+
+    <UseCallback />
+
+
     </div>
-  
-      
-    
 
     </>
   );
